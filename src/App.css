@@ -1,235 +1,237 @@
 #root {
-	margin: 0 auto;
-	text-align: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* src/index.css or src/App.css */
 @font-face {
-	font-family: "primaryfont";
-	src: url("./assets/fonts/MyCustomFont.woff2") format("woff2"),
-		url("./assets/fonts/MyCustomFont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
+  font-family: "primaryfont";
+  src: url("./assets/fonts/MyCustomFont.woff2") format("woff2"),
+    url("./assets/fonts/MyCustomFont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-	font-family: "primaryfont", sans-serif;
+  font-family: "primaryfont", sans-serif;
 }
 
 .underline-text {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .underline-text::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0; /* Position it below the text */
-	height: 2px; /* Height of the underline */
-	width: 0%; /* Full width */
-	background-color: #f68529; /* Tailwind color blue-500 (change as needed) */
-	transform: scaleX(0); /* Start with a scale of 0 (hidden) */
-	transition: transform 0.3s ease-in-out;
-	margin-bottom: 4px;
-	padding-bottom: 1px; /* Smooth transition */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Position it below the text */
+  height: 2px; /* Height of the underline */
+  width: 0%; /* Full width */
+  background-color: #f68529; /* Tailwind color blue-500 (change as needed) */
+  transform: scaleX(0); /* Start with a scale of 0 (hidden) */
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 4px;
+  padding-bottom: 1px; /* Smooth transition */
 }
 
 .underline-text:hover::before {
-	width: 100%;
-	transform: scaleX(1); /* Scale to full width on hover */
+  width: 100%;
+  transform: scaleX(1); /* Scale to full width on hover */
 }
 
 .title-element::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0; /* Position it below the text */
-	height: 2px; /* Height of the underline */
-	width: 10%; /* Full width */
-	background-color: #f68529; /* Tailwind color blue-500 (change as needed) */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Position it below the text */
+  height: 2px; /* Height of the underline */
+  width: 10%; /* Full width */
+  background-color: #f68529; /* Tailwind color blue-500 (change as needed) */
 }
 
 /* Home Page CSS Part */
 .picture-231801ea78c8b1cd74930d678c .b-picture__el {
-	position: relative;
+  position: relative;
 }
 
 .picture-231801ea78c8b1cd74930d678c .b-picture__el img {
-	position: absolute;
+  position: absolute;
 }
 
 .picture-231801ea78c8b1cd74930d678c .b-picture__el::after {
-	content: "";
-	display: block;
-	padding-bottom: 125%;
+  content: "";
+  display: block;
+  padding-bottom: 125%;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-	.picture-231801ea78c8b1cd74930d678c .b-picture__el::after {
-		padding-bottom: 125%;
-	}
+  .picture-231801ea78c8b1cd74930d678c .b-picture__el::after {
+    padding-bottom: 125%;
+  }
 }
 
 @media only screen and (min-width: 1025px) {
-	.picture-231801ea78c8b1cd74930d678c .b-picture__el::after {
-		padding-bottom: 56.25%;
-	}
+  .picture-231801ea78c8b1cd74930d678c .b-picture__el::after {
+    padding-bottom: 56.25%;
+  }
 }
 
 @keyframes float1 {
-	0% {
-		transform: translate(0, 0);
-	}
-	10% {
-		transform: translate(10px, -10px);
-	}
-	20% {
-		transform: translate(20px, -20px);
-	}
-	30% {
-		transform: translate(30px, 0);
-	}
-	40% {
-		transform: translate(20px, 10px);
-	}
-	50% {
-		transform: translate(10px, 20px);
-	}
-	60% {
-		transform: translate(0, 30px);
-	}
-	70% {
-		transform: translate(-10px, 20px);
-	}
-	80% {
-		transform: translate(-20px, 10px);
-	}
-	90% {
-		transform: translate(-10px, -10px);
-	}
-	100% {
-		transform: translate(0, 0); /* Return to center */
-	}
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(10px, -10px);
+  }
+  20% {
+    transform: translate(20px, -20px);
+  }
+  30% {
+    transform: translate(30px, 0);
+  }
+  40% {
+    transform: translate(20px, 10px);
+  }
+  50% {
+    transform: translate(10px, 20px);
+  }
+  60% {
+    transform: translate(0, 30px);
+  }
+  70% {
+    transform: translate(-10px, 20px);
+  }
+  80% {
+    transform: translate(-20px, 10px);
+  }
+  90% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0); /* Return to center */
+  }
 }
 @keyframes float2 {
-	0% {
-		transform: translate(0, 0);
-	}
-	10% {
-		transform: translate(-10px, 10px);
-	}
-	20% {
-		transform: translate(-20px, 20px);
-	}
-	30% {
-		transform: translate(-30px, 0);
-	}
-	40% {
-		transform: translate(-20px, -10px);
-	}
-	50% {
-		transform: translate(-10px, -20px);
-	}
-	60% {
-		transform: translate(0, -30px);
-	}
-	70% {
-		transform: translate(10px, -20px);
-	}
-	80% {
-		transform: translate(20px, -10px);
-	}
-	90% {
-		transform: translate(10px, 10px);
-	}
-	100% {
-		transform: translate(0, 0); /* Return to center */
-	}
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-10px, 10px);
+  }
+  20% {
+    transform: translate(-20px, 20px);
+  }
+  30% {
+    transform: translate(-30px, 0);
+  }
+  40% {
+    transform: translate(-20px, -10px);
+  }
+  50% {
+    transform: translate(-10px, -20px);
+  }
+  60% {
+    transform: translate(0, -30px);
+  }
+  70% {
+    transform: translate(10px, -20px);
+  }
+  80% {
+    transform: translate(20px, -10px);
+  }
+  90% {
+    transform: translate(10px, 10px);
+  }
+  100% {
+    transform: translate(0, 0); /* Return to center */
+  }
 }
+
 @keyframes float3 {
-	0% {
-		transform: translate(0, 0);
-	}
-	10% {
-		transform: translate(15px, -15px);
-	}
-	20% {
-		transform: translate(30px, -30px);
-	}
-	30% {
-		transform: translate(15px, -15px);
-	}
-	40% {
-		transform: translate(0, 0);
-	}
-	50% {
-		transform: translate(-15px, 15px);
-	}
-	60% {
-		transform: translate(-30px, 30px);
-	}
-	70% {
-		transform: translate(-15px, 15px);
-	}
-	80% {
-		transform: translate(0, 0);
-	}
-	90% {
-		transform: translate(15px, -15px);
-	}
-	100% {
-		transform: translate(0, 0); /* Return to center */
-	}
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(15px, -15px);
+  }
+  20% {
+    transform: translate(30px, -30px);
+  }
+  30% {
+    transform: translate(15px, -15px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-15px, 15px);
+  }
+  60% {
+    transform: translate(-30px, 30px);
+  }
+  70% {
+    transform: translate(-15px, 15px);
+  }
+  80% {
+    transform: translate(0, 0);
+  }
+  90% {
+    transform: translate(15px, -15px);
+  }
+  100% {
+    transform: translate(0, 0); /* Return to center */
+  }
 }
+
 @keyframes float4 {
-	0% {
-		transform: translate(0, 0);
-	}
-	10% {
-		transform: translate(-20px, 0);
-	}
-	20% {
-		transform: translate(-30px, 20px);
-	}
-	30% {
-		transform: translate(-20px, 30px);
-	}
-	40% {
-		transform: translate(0, 20px);
-	}
-	50% {
-		transform: translate(20px, 30px);
-	}
-	60% {
-		transform: translate(30px, 20px);
-	}
-	70% {
-		transform: translate(20px, 0);
-	}
-	80% {
-		transform: translate(0, -20px);
-	}
-	90% {
-		transform: translate(-10px, -10px);
-	}
-	100% {
-		transform: translate(0, 0); /* Return to center */
-	}
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-20px, 0);
+  }
+  20% {
+    transform: translate(-30px, 20px);
+  }
+  30% {
+    transform: translate(-20px, 30px);
+  }
+  40% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    transform: translate(20px, 30px);
+  }
+  60% {
+    transform: translate(30px, 20px);
+  }
+  70% {
+    transform: translate(20px, 0);
+  }
+  80% {
+    transform: translate(0, -20px);
+  }
+  90% {
+    transform: translate(-10px, -10px);
+  }
+  100% {
+    transform: translate(0, 0); /* Return to center */
+  }
 }
 
 .animate-float1 {
-	animation: float1 40s ease-in-out infinite;
+  animation: float1 40s ease-in-out infinite;
 }
 
 .animate-float2 {
-	animation: float2 40s ease-in-out infinite;
+  animation: float2 40s ease-in-out infinite;
 }
 
 .animate-float3 {
-	animation: float3 40s ease-in-out infinite;
+  animation: float3 40s ease-in-out infinite;
 }
 
 .animate-float4 {
-	animation: float4 40s ease-in-out infinite;
+  animation: float4 40s ease-in-out infinite;
 }
